@@ -108,7 +108,7 @@ bind传入一个block，并要求这个block返回一个`RACStreamBindBlock`类�
 
 在这个过程中，如果任何一个signal产生了error，都会被发送给订阅者。
 
-```
+```objc
 - (RACSignal *)bind:(RACSignalBindBlock (^)(void))block {
   // 不允许绑定block为nil
 	NSCParameterAssert(block != NULL);
